@@ -4,358 +4,399 @@ body{
     font-family: 'Quicksand', sans-serif;
 }
 
-/* Start Header */
+/* Start Header Section*/
 
-/* Start Header Into */
-.headerintros{
-    height: 50px;
-    background-color: darkblue;
+/* Start Header Intro*/
+
+.headerintors{
+    height:50px;
+    font-size:12px;
+    background:darkblue;
+    color:#fff;
+    display:none;
 }
 
-.headerintros .infos{
-    color: #fff;
-    text-align: center;
-    font-size: 12px;
-    font-weight: 900;
-
-    display: flex;
-    justify-content: space-between;
+.headerintors .infos{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-weight:bold;
 }
 
-@media (max-width: 1200px){
+table{
+    width:85%;
+    height:50px;
+}
 
+td{
+    text-align:center;
+}
+
+@media (min-width:1200px) {
     .visiblelgs{
-        display: none;
+        display:block;
     }
 }
-/* End Header Intro */
-
-/* Nav Section */
-.navbar-toggler{
-    color: #999;
-    border: none;
-}
-
-.navbar-toggler:focus{
-    color: darkblue;
-    box-shadow: none;
-}
-
-.ellipses{
-    display: block;   
-    font-size: 20px;
-    border: none;
-    padding: 3px 0;
-}
-/* End Section */
-
-
-/* Start Banner Secton */
+/* End Header Intro*/
+/* Start Banner */
 .carousel-item{
-    height: 60vh;
+    height:60vh;
 }
 
 .banners1,.banners2,.banners3{
-    background-image: url("../assets/img/banner/banner4.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+}
+
+.banners1{
+    background-image:url('../assets/img/banner/banner4.jpg');
 }
 
 .banners2{
-    background-image: url("../assets/img/banner/banner5.jpg");
+    background-image:url('../assets/img/banner/banner5.jpg');
 }
 
 .banners3{
-    background-image: url("../assets/img/banner/banner6.jpg");
+    background-image:url('../assets/img/banner/banner6.jpg');
 }
 
 .btn-blues{
-    color: #fff;
-    background-color: darkblue;
+    background-color:darkblue;
+    color:#fff;
 }
-/* End Banner Section */
-/* End Header */
 
-/* Start Features SEctione */
+
+/* End Banner */
+
+/* End Header Section*/
+
+/* Start Feature Section */
+
 .iconboxes{
-    background-color: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2);
-    padding: 50px 20px;
+    background-color:#fff;
+    box-shadow:0 2px 15px rgba(0,0,0,0.2);
+    padding:50px 20px;
 
     position: relative;
 }
 
 .icons{
-    width: 70px;
-    height: 70px;
-    color: #fff;
-    background-color: lightseagreen;
-    border-radius: 50%;
+    width:70px;
+    height:70px;
+    background-color:darkcyan;
+    color:#fff;
+    border-radius:50%;
 
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 
     position: absolute;
-    left: calc(50% - 35px);
-    top: -35px;
-
-    transition: all 0.3s;
-}
-
-.feature-texts{
-    overflow: hidden;
-    transform: scale(1);
-    transition: all 0.3s;
+    left:calc( 50% - 35px );
+    top:-35px;
 }
 
 .iconboxes:hover .icons{
-    background-color: #fff;
-    color: lightseagreen;
-    border: 2px solid lightseagreen;
+    background:none;
+    color:darkcyan;
+    border:2px solid darkcyan;
 }
+/* End Feature Section */
 
-.iconboxes:hover .feature-texts{
-    transform: scale(1.05);
-}
-/* End Features Section */
+/* Start Info Section */
 
-/* Start Info SEction */
 .fromlefts{
-    animation: myleft 3s;
+    animation:myleft 3s;
 }
 
 .fromrights{
-    animation: myright 3s;
+    animation:myright 3s;
 }
 
 @keyframes myleft {
     from{
-        transform: translateX(-30px);
-        opacity: 0;
-    }to{
-        transform: translateX(0px);
-        opacity: 1;
+        transform:translate(-30px);
+        opacity:0;
+    }
+    
+    to{
+        transform:translate(0);
+        opacity:1;
     }
 }
 
 @keyframes myright {
     from{
-        transform: translateX(30px);
-        opacity: 0;
-    }to{
-        transform: translateX(0px);
-        opacity: 1;
+        transform:translate(30px);
+        opacity:0;
+    }
+    
+    to{
+        transform:translate(0);
+        opacity:1;
     }
 }
-/* End Info section */
+/* End Info Section */
 
-/* Start Adv SEction */
+/* Start Adv Section */
 .advs{
-    height: 300px;
-    color: #fff;
-    text-shadow: -5px 0 10px #000;
+    height:300px;
+    background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)), url('../assets/img/banner/banner1.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
 
-    background-image: linear-gradient(
-        rgba(0,0,0,0.3),
-        rgba(0,0,0,0.3)
-    ), url("../assets/img/banner/banner1.jpg");
+    color:#fff;
+    text-shadow:-5px 0 10px #000;
 
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-
-    display: flex;
-    align-items: center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
 }
-
 /* End Adv Section */
 
-/* Start Department Section*/
+/* Start Departments Sections */
 .deptboxes{
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
-    border-radius: 20px;
+    box-shadow:0 10px 10px rgba(0,0,0,0.5);
+    border-radius:20px;
 
-    position: relative;
-    overflow: hidden;
+    position:relative;
 
-    transition: all 0.3s;
+    overflow:hidden;
 }
 
 .deptboxes img{
-    width: 100%;
-    object-fit: cover;
-
-    transition: all 0.3s;
+    width:100%;
+    object-fit:cover;
+    transition:all .5s;
 }
 
 .deptboxes .contents{
-    width: 80%;
-    height: 100%;
-    background-color: #fff;
-
-    position: absolute;
-    left: 10%;
-    bottom: -85%;
-
-    transition: all 0.3s;
-}
-
-.deptboxes a{
-    background-color: steelblue;
-    color: #fff;
-    font-size: 14px;
-    text-decoration: none;
-    padding: 10px 15px;
-    border-radius: 20px;
-
-    display: inline-block;
+    width:80%;
+    height:100%;
+    background-color:#fff;
+    text-align:center;
     
-    opacity: 0;
-    transition: all 0.3s;
+    position:absolute;
+    left:10%;
+    bottom:-90%;
+    transition:all .5s;
 }
 
 .deptboxes:hover .contents{
-    width: 100%;
-    height: 53%;
+    width:100%;
+    height:60%;
 
-    left: 0;
-    bottom: 0;
+    left:0;
+    bottom:0;
+}
+
+.deptboxes a{
+    background-color:steelblue;
+    color:#fff;
+    font-size:14px;
+    text-decoration:none;
+    padding:10px 15px;
+    border-radius:20px;
+
+    display:inline-block;
+    margin-top:10px;
+
+    transition:all .5s;
 }
 
 .deptboxes:hover a{
-    opacity: 1;
-    transition-delay: 0.3s;
+    opacity:1;
 }
 
 .deptboxes:hover img{
-    transform: scale(1.2);
+    transform:scale(1.2);
 }
 
-.deptboxes:hover h3{
-    color: steelblue;
-  
-    font-weight: bold;
-    letter-spacing: 2px;
+.deptboxes h3{
+    color:steelblue;
+    font-size:16px;
+    font-weight:bold;
+    letter-spacing:2px;
+
+    padding-top:6px;
 }
 
-.deptboxes:hover p{
-    width: 80%;
-    margin: auto;
-}
-/* End Department SEction */
-
-/* Start Pricing SEction */
-
-#pricing{
-    background-color: #f4f4f4;
+.deptboxes p{
+    width:80%;
+    font-size:13px;
+    margin:5px auto;
 }
 
+/* End Departments Sections */
+
+/*Start Pricing Section*/
 .pricingcards{
-    background-color: #fff;
-    box-shadow: 0 0px 10px #f4f4f4;
-    text-align: center;
-    padding-bottom: 20px;
-    transition: all 0.3s;
+	background-color: #fff;
+	text-align: center;
+	padding-bottom:20px;
+	transition: all .3s;
+    box-shadow:0px 5px 5px rgba(0,0,0,0.5);
 }
 
 .pricingcards .pricingheaders{
-    padding: 40px 20px;
-    border-bottom: 2px solid #f3f3f3;
-    transition: all 0.3s;
+	padding: 40px 20px;
+	border-bottom: 2px solid #f3f3f3;
+
 }
 
-.pricingcards .prices{
-    color: blue;
-    font-size: 30px;
-    font-weight: bold;
-    margin-bottom: 20px;
+.prices{
+	color: blue;
+	font-size: 30px;
+	font-weight: bold;
+	margin-bottom: 20px;
+
 }
 
 .pricingfeatures ul li{
-    list-style: none;
-    margin: 10px 0;
+	list-style: none;
+	margin: 10px 0;
 }
 
 .btn-pricings{
-    background: linear-gradient(
-        -90deg,
-        skyblue,
-        blue
-    );
-    color: #fff;
-    font-weight: bold;
-    border: none;
-    border-radius: 20px;
-
-    padding: 10px 30px;
-    transition: all 0.3s;
+	background: linear-gradient(-90deg,skyblue,blue);
+	color: #fff;
+	font-weight: bold;
+	border:none;
+	border-radius: 20px;
+	padding: 10px 30px;
 }
-
 .btn-pricings:hover{
-    background: linear-gradient(
-        90deg,
-        skyblue,
-        blue
-    );
-    color: #fff;
+	background:linear-gradient(90deg,skyblue,blue);
+	color: #fff;
 }
-
 .pricingcards:hover{
-    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
-    transform: translateY(-20px);
-    padding-bottom: 40px;
+	box-shadow: 5px 5px 10px rgba(0,0,0,0.5);
+	transform: translateY(-20px);
 }
-
 .pricingcards:hover .pricingheaders{
-    background-image: linear-gradient(
-        -90deg,
-        skyblue,
-        blue
-    );
-    color: #fff;
+	background:linear-gradient(90deg,skyblue,blue);
+	color: #fff;
 }
 
-.movelefts{
-    animation: movefromleft 2s;
+@keyframes movefromleft{
+	from{
+		transform: translateX(-100px);
+		opacity: 0;
+	}
+	to{
+		transform: translateX(0px);
+		opacity: 1;
+	}
 }
 
-.moverights{
-    animation: movefromright 2s;
+.movefromlefts{
+	animation-name: movefromleft;
+	animation-duration: 2s;
+}
+.movefromrights{
+	animation-name: movefromright;
+	animation-duration: 2s;
+}
+.movefrombottoms{
+	animation-name: moverfrombottoms;
+	animation-duration: 2s;
 }
 
-.movebottoms{
-    animation: movefrombottom 2s;
+
+@keyframes movefromright{
+	from{
+		transform: translateX(100px);
+		opacity: 0;
+	}
+	to{
+		transform: translateX(0px);
+		opacity: 1;
+	}
 }
 
-@keyframes movefromleft {
-    from{
-        transform: translateX(-100px);
-        opacity: 0;
-    }to{
-        transform: translateX(0);
-        opacity: 1;
-    }
+@keyframes movefrombottom{
+	from{
+		transform: translateY(100px);
+		opacity: 0;
+	}
+	to{
+		transform: translateX(0px);
+		opacity: 1;
+	}
+}
+/*End Pricing Section*/
+
+/* Start Join Us Section */
+
+.customforms{
+    background-color:#fff;
+    border:1px solid #bbb;
+    padding:30px;
+}
+/* End Join Us Section */
+
+/* Start Footer */
+.socialicons a{
+    width:35px;
+    height:35px;
+    display:inline-block;
+    color:#fff;
+    border:1px solid #f4f4f4;
+    /* padding:5px ; */
+    margin:0 5px;
+    text-align:center;
+    line-height:35px;
+    margin-bottom:-30px;
+    border-radius:5px;
 }
 
-@keyframes movefromright {
-    from{
-        transform: translateX(100px);
-        opacity: 0;
-    }to{
-        transform: translateX(0);
-        opacity: 1;
-    }
+.socialicons a:hover{
+    background-color:blue;
 }
 
-@keyframes movefrombottom {
-    from{
-        transform: translateY(100px);
-        opacity: 0;
-    }to{
-        transform: translateX(0);
-        opacity: 1;
-    }
+.footer-links{
+    color:#eee;
+    font-size:13px;
+    text-decoration:none;
 }
-/* End Pricing SEction */
+
+.footer-links:hover{
+    color:orange;
+    border-bottom:1px solid orange;
+    letter-spacing:1px;
+}
+
+/* End Footer */
+
+/* Start Progress */
+#progresses{
+    width:50px;
+    height:50px;
+    /* background-color:steelblue; */
+    border-radius:50%;
+    box-shadow:0 0 5px rgba(0,0,0,0.2);
+
+    position:fixed;
+    bottom:20px;
+    right:20px;
+
+    
+    display:grid;
+    place-items:center;
+    
+    z-index:10;
+}
+
+#progressvalues{
+    width:calc(100% - 10px);
+    height:calc(100% - 10px);
+    background-color:#fff;
+    border-radius:50%;
+    font-weight:bold;
+    
+    display:grid;
+    place-items:center;
+}
+/* End Progress */
